@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="juseeApp">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta content="Cold Pressed Juice Bandung" name="description">
+    <meta content="juice,bandung,lifestyle,trend,shop" name="keywords">
+    <meta content="Harya Putra" name="author">
+
+    <title>usée Cold Pressed Juice</title>
+    <link href="assets/image/favicon-3-32x32.png" rel="icon" sizes="32x32"
+    type="image/png"><!-- Bootstrap -->
+    <link href="assets/vendor/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/vendor/css/custom.css" rel="stylesheet">
+    <link href="assets/vendor/fonts/new/font.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Facebook Pixel Code -->
+
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '467203146783940');
+    fbq('track', "PageView");
+    </script><noscript><img height="1" src=
+    "https://www.facebook.com/tr?id=467203146783940&ev=PageView&noscript=1"
+    style="display:none" width="1"></noscript><!-- End Facebook Pixel Code -->
+    
+    <!-- angularjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.min.js">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-route.min.js">
+        </script> 
+        <script src="assets/app/juseeapp.js">
+        </script>
+    <script src="assets/vendor/js/ngtweet.min.js">
+        </script>
+    <!-- end angularjs-->
+</head>
+
+<body ng-controller="mainController as images">
+    <div id="fb-root">
+    </div>
+    <script>
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script> <!-- Google Tag Manager -->
+    <noscript><iframe height="0" src=
+    "//www.googletagmanager.com/ns.html?id=GTM-PZVXMF" style=
+    "display:none;visibility:hidden" width="0"></iframe></noscript> 
+    <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PZVXMF');
+    </script> <!-- End Google Tag Manager -->
+
+    <div ng-include src="'pages/navigation.html'">
+        </div>
+
+
+    <div id="skrollr-body">
+        <div ng-view></div>
+        <div ng-include src="'pages/footer.html'">
+        </div>
+         
+    </div>
+    
+     <!-- skrollr - for paralax -->
+         
+        <script src="assets/vendor/js/skrollr.js" type="text/javascript">
+        </script> 
+        <script type="text/javascript">
+        var s = skrollr.init({forceHeight:false});
+        </script> 
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js">
+        </script> 
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+         
+        <script src="assets/vendor/bootstrap-3.3.5-dist/js/bootstrap.js">
+        </script> <!-- JavaScript Includes -->
+         
+         <!--<div id="skrollr-body"></div>-->
+    
+</body>
+</html>
